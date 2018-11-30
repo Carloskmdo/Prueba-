@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PRUEBA DE PROGRAMACION</title>
+<script>
+function resultado() {
+  var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, nota
+
+  <!-- 1ª pregunta -->
+  if (document.getElementById('p12').checked==true) {p1=1}
+  else {p1=0}
+  <!-- 2ª pregunta -->
+  if (document.getElementById('p22').checked==true) {p2=1}
+  else {p2=0}
+  <!-- 3ª pregunta -->
+  if (document.getElementById('p33').checked==true) {p3=1}
+  else {p3=0}
+  <!-- 4ª pregunta -->
+  if (document.getElementById('p44').checked==true) {p4=1}
+  else {p4=0}
+  <!-- 5ª pregunta -->
+  if(document.getElementById('p51').checked==true) {p5=1}
+  else {p5=0}
+  <!-- 6ª pregunta -->
+  if (document.getElementById('p64').checked==true) {p6=1}
+  else {p6=0}
+  <!-- 7ª pregunta -->
+  if (document.getElementById('p71').checked==true) {p7=1}
+  else {p7=0}
+  <!-- 8ª pregunta -->
+  if (document.getElementById('p82').checked==true) {p8=1}
+  else {p8=0}
+  <!-- 9ª pregunta -->
+  if (document.getElementById('p91').checked==true) {p9=1}
+  else {p9=0}
+  <!-- 10ª pregunta -->
+  if(document.getElementById('p103').checked==true) {p10=1}
+  else {p10=0}
+
+  nota=p1+p2+p3+p4+p5+p6+p7+p8+p9+p10;
+  alert('CALIFICACION: ' + nota);
+  location.reload();
+}
+</script>
+</head>
+<body>
+<h2>PRUEBA</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p>1.-¿Cuales son las formas en que se puede representar los algoritmos?</p>
+<input type="radio" name="pregunta1" id="p11"> Algoritmo, Secuencial</p>
+<input type="radio" name="pregunta1" id="p12"> Pseudocódigos, Diagramas de flujo</p>
+<input type="radio" name="pregunta1" id="p13"> Programa incremental, Seudocódigo</p>
+<input type="radio" name="pregunta1" id="p14"> Mapa conceptual, Diagrama relacional</p>
+
+<p>2.-¿Que nos permite crear el lenguaje de programación SCRATCH?</p>
+<input type="radio" name="pregunta2" id="p21"> Crear mapas conceptuales</p>
+<input type="radio" name="pregunta2" id="p22"> Crear animaciones y juegos</p>
+<input type="radio" name="pregunta2" id="p23"> Crear paginas web</p>
+<input type="radio" name="pregunta2" id="p24"> Crear esquemas y graficos</p>
+
+<p>3.-¿Que es Git?</p>
+<input type="radio" name="pregunta3" id="p31"> Software de distribucion de programas</p>
+<input type="radio" name="pregunta3" id="p32"> Hardware de Programación</p>
+<input type="radio" name="pregunta3" id="p33"> Software de almacenamiento local</p>
+<input type="radio" name="pregunta3" id="p34"> Hardware de plataforma virtual</p>
+
+<p>4.-¿Que función nos permite ingresar datos por teclado en Atom?</p>
+<input type="radio" name="pregunta4" id="p41"> index.html</p>
+<input type="radio" name="pregunta4" id="p42"> new</p>
+<input type="radio" name="pregunta4" id="p43"> date</p>
+<input type="radio" name="pregunta4" id="p44"> prompt</p>
+
+<p>5.-¿Cuales son los métodos que dispone un objeto de tipo DATE?</p>
+<input type="radio" name="pregunta5" id="p51"> get y set</p>
+<input type="radio" name="pregunta5" id="p52"> get y long</p>
+<input type="radio" name="pregunta5" id="p53"> set y char</p>
+<input type="radio" name="pregunta5" id="p54"> set y struct</p>
+
+<p>6.-¿Cuales son los 3 estados con que cuenta Git para poder localizar los archivos?</p>
+<input type="radio" name="pregunta6" id="p61"> Modified, Staget, clear</p>
+<input type="radio" name="pregunta6" id="p62"> Staget, Modified, onclick</p>
+<input type="radio" name="pregunta6" id="p63"> Modified, clear, Modified</p>
+<input type="radio" name="pregunta6" id="p64"> Modified, Staget, Committed</p>
+
+<p>7.-¿Cual son las sintaxis correctas para acceder a los métodos y propiedades de un objeto?</p>
+<input type="radio" name="pregunta7" id="p71"> objeto.metodo(), objeto.propiedad</p>
+<input type="radio" name="pregunta7" id="p72"> propiedad.método, objeto.propiedad</p>
+<input type="radio" name="pregunta7" id="p73"> método(), propiedad()</p>
+<input type="radio" name="pregunta7" id="p74"> propiedad.html, metodo.html</p>
+
+<p>8.-¿Que es array?</p>
+<input type="radio" name="pregunta8" id="p81"> Es una estrcutura que permite controlar el programa</p>
+<input type="radio" name="pregunta8" id="p82"> Es una estructura que nos permite almacenar datos de un mismo tipo</p>
+<input type="radio" name="pregunta8" id="p83"> Es una estructura que realiza objetos y animaciones</p>
+<input type="radio" name="pregunta8" id="p84"> Es una plataforma que realiza calculos de numeros enteros</p>
+
+
+<p>9.-¿Que es Github?</p>
+<input type="radio" name="pregunta9" id="p91"> Una plataforma de almacenamiento de versiones</p>
+<input type="radio" name="pregunta9" id="p92"> Una plataforma de acceso publico</p>
+<input type="radio" name="pregunta9" id="p93"> Una plataforma de programación ordenada</p>
+<input type="radio" name="pregunta9" id="p94"> Una plataforma de diseño y graficos</p>
+
+
+<p>10.-¿Que comando nos permite crear un repositorio en Git?</p>
+<input type="radio" name="pregunta10" id="p101"> git long repositorio</p>
+<input type="radio" name="pregunta10" id="p102"> git clear repositorio</p>
+<input type="radio" name="pregunta10" id="p103"> git init repositorio</p>
+<input type="radio" name="pregunta10" id="p104"> git congif repositorio</p>
+<hr>
+<p><input type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</form>
+</body>
+</html>
